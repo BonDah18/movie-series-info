@@ -10,7 +10,7 @@ function Footer() {
                  <span className="text-warning font-weight-normal">
                     Ine Dah
                   </span>
-                  , Using <i className="fav fa-react" /> React JS &amp; Redux JS intergrated with external movies data API
+                  , Using <i className="fab fa-react" /> React JS &amp; Redux JS intergrated with external movies data API
                   <a  
                       href="http://www.omdbapi.com/"
                       target="_blank"
