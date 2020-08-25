@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { connect } from 'react-redux';
 
-import { searchMovie, fetchMovies, setLoading } from '../actions/searchActions';
+import { searchMovie, fetchMovies, setLoading } from '../../Actions/searchActions';
 
 export class SearchForm extends Component {
   onChange = e => {

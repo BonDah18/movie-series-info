@@ -1,7 +1,7 @@
 import {SEARCH_MOVIE, FETCH_MOVIES, FETCH_MOVIE, LOADING } from './types';
 import axios from 'axios';
 
-import {APIKey} from '../APIKey'
+import { APIKey } from '../Components/APIKey';
 
 export const searchMovie = text => dispatch => {
   dispatch({
@@ -10,28 +10,28 @@ export const searchMovie = text => dispatch => {
   })
 };
 
-export const fetchMovies = text => dispatch =>{
+export const fetchMovies = text => dispatch => {
   axios.get(`https://www.omdbapi.com/?apikey=${APIKey}&s=${text}`)
-      .then(repsonse => dispatch ({
+      .then(response => dispatch ({
             type: FETCH_MOVIES, 
             payload: response.data
             })
            )
-       .catch(err => coonsole.log(err));
+       .catch(err => console.log(err));
 };
 
 export const fetchMovie = id => disptach => {
  axios.get(`https://www.omdbapi.com/?apikey=${APIKey}&s=${id}`)
-      .then(repsonse => dispatch ({
+      .then(response => disptach ({
             type: FETCH_MOVIE, 
             payload: response.data
             })
            )
-       .catch(err => coonsole.log(err));
+       .catch(err => console.log(err));
 }; 
 
 export const setLoading = () => {
   return { 
-  type: Loading
+  type: LOADING
   };
 };

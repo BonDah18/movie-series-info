@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import {connect} from 'react-redux';
 
-import MovieCard from './MoiveCard';
+import MovieCard from './MovieCard';
 
 export class MoviesContainer extends Component {
   render () {
