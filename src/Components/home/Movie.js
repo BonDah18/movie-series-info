@@ -61,7 +61,7 @@ export class Movie extends Component {
               >
                 View on IMDB
               </a>
-              <Link to="/" className="btn btn-default text-light">
+              <Link to="/" className="btn btn-secondary text-light">
                 Go Back To Search
               </Link>
             </div>
